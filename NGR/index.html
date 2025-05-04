@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustlz - Egyptian Fashion Hub</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Hustlz</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="size-chart-btn">Size Chart</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-results"></div>
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="user-dropdown">
+                        <i class="fas fa-user user-icon"></i>
+                        <div class="dropdown-content">
+                            <a href="#" class="login-btn">Login</a>
+                            <a href="#" class="register-btn">Register</a>
+                            <div class="user-info" style="display:none">
+                                <p>Welcome, <span class="username">User</span></p>
+                                <a href="#" class="account-settings">Account Settings</a>
+                                <a href="#" class="order-history">Order History</a>
+                                <a href="#" class="logout-btn">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>No Luck Just Hustle</h1>
+            <p>Streetwear that defines your vibe</p>
+            <a href="#collections" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="products-header">
+            <h2>Our Latest Drops</h2>
+            <div class="product-filters">
+                <select class="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="mens">Men's</option>
+                    <option value="womens">Women's</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+                <select class="sort-filter">
+                    <option value="">Sort By</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-grid"></div>
+    </section>
+
+    <section class="collections" id="collections">
+        <div class="collections-header">
+            <h1>Our Collections</h1>
+            <p>Explore our curated streetwear collections designed for every vibe.</p>
+        </div>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="images/mens collection.jpg" alt="Men's Collection">
+                <div class="collection-info">
+                    <h3>Men's Collection</h3>
+                    <p>Bold tees, hoodies, and jackets for the modern hustler.</p>
+                    <a href="#mens-collection" class="btn">Shop Men's</a>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="images/women collection.jpg" alt="Women's Collection">
+                <div class="collection-info">
+                    <h3>Women's Collection</h3>
+                    <p>Trendy tops, joggers, and accessories for fierce style.</p>
+                    <a href="#womens-collection" class="btn">Shop Women's</a>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="images/accessore collection.jpg" alt="Accessories">
+                <div class="collection-info">
+                    <h3>Accessories</h3>
+                    <p>Caps, bags, and more to complete your look.</p>
+                    <a href="#accessories-collection" class="btn">Shop Accessories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-products" id="mens-collection">
+        <div class="collection-header">
+            <h1>Men's Collection</h1>
+            <p>Bold tees, hoodies, and jackets for the modern hustler.</p>
+        </div>
+        <div class="product-filters">
+            <select class="category-filter">
+                <option value="">All Items</option>
+                <option value="tees">T-Shirts</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="jackets">Jackets</option>
+                <option value="pants">Pants</option>
+                <option value="shorts">Shorts</option>
+            </select>
+            <select class="sort-filter">
+                <option value="">Sort By</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid"></div>
+    </section>
+
+    <section class="collection-products" id="womens-collection">
+        <div class="collection-header">
+            <h1>Women's Collection</h1>
+            <p>Trendy tops, joggers, and accessories for fierce style.</p>
+        </div>
+        <div class="product-filters">
+            <select class="category-filter">
+                <option value="">All Items</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="pants">Pants</option>
+                <option value="dresses">Dresses</option>
+                <option value="tops">Tops</option>
+                <option value="jeans">Jeans</option>
+            </select>
+            <select class="sort-filter">
+                <option value="">Sort By</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid"></div>
+    </section>
+
+    <section class="collection-products" id="accessories-collection">
+        <div class="collection-header">
+            <h1>Accessories Collection</h1>
+            <p>Caps, bags, and more to complete your look.</p>
+        </div>
+        <div class="product-filters">
+            <select class="category-filter">
+                <option value="">All Items</option>
+                <option value="shoes">Shoes</option>
+                <option value="hats">Hats</option>
+                <option value="bags">Bags</option>
+                <option value="wallets">Wallets</option>
+                <option value="sunglasses">Sunglasses</option>
+            </select>
+            <select class="sort-filter">
+                <option value="">Sort By</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid"></div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-header">
+            <h1>About Hustlz</h1>
+            <p>Discover our story and passion for Egyptian streetwear fashion</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Hustlz was born on the vibrant streets of Cairo, inspired by the hustle and energy of Egyptian youth culture. Founded in 2020, our mission is to create streetwear that blends modern style with Egyptian heritage, offering bold designs that speak to the fearless spirit of the modern hustler.</p>
+                <h2>Our Vision</h2>
+                <p>We aim to redefine streetwear by combining quality craftsmanship with authentic cultural elements. Every piece tells a story, celebrating the resilience and creativity of Egypt's youth.</p>
+                <a href="#collections" class="btn">Shop Now</a>
+            </div>
+            <div class="about-image">
+                <img src="images/background.jpg" alt="Egyptian street culture" onerror="this.onerror=null; this.src='images/mens collection.jpg'; console.log('Background image not found');" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Have questions? Get in touch with our team!</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-envelope"></i> support@hustlz.com</p>
+                <p><i class="fas fa-phone"></i> +20 123 456 7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Streetwear Ave, Cairo, Egypt</p>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout" id="checkout">
+        <div class="checkout-header">
+            <h1>Checkout</h1>
+            <p>Complete your purchase securely</p>
+        </div>
+        <div class="checkout-content">
+            <div class="checkout-form">
+                <h2>Shipping Information</h2>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <h2>Payment Information</h2>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Expiry Date</label>
+                        <input type="text" id="card-expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvc">CVC</label>
+                        <input type="text" id="card-cvc" placeholder="123" required>
+                    </div>
+                    <button type="submit" class="btn">Complete Purchase</button>
+                </form>
+            </div>
+            <div class="checkout-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-items"></div>
+                <div class="summary-total"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="size-chart-modal" id="size-chart-modal">
+        <div class="size-chart-content">
+            <span class="close-size-chart">×</span>
+            <h2>Size Chart</h2>
+            <p>Find the perfect fit with our size guide (measurements in cm).</p>
+            <div class="size-chart-tabs">
+                <button class="tab-btn active" data-tab="mens">Men's</button>
+                <button class="tab-btn" data-tab="womens">Women's</button>
+                <button class="tab-btn" data-tab="accessories">Accessories</button>
+            </div>
+            <div class="size-chart-table" id="mens">
+                <h3>Men's Size Chart</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest</th>
+                            <th>Waist</th>
+                            <th>Hips</th>
+                            <th>Inseam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S</td>
+                            <td>86-91</td>
+                            <td>71-76</td>
+                            <td>86-91</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>91-96</td>
+                            <td>76-81</td>
+                            <td>91-96</td>
+                            <td>79</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>96-101</td>
+                            <td>81-86</td>
+                            <td>96-101</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>101-106</td>
+                            <td>86-91</td>
+                            <td>101-106</td>
+                            <td>81</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="size-chart-table" id="womens" style="display: none;">
+                <h3>Women's Size Chart</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Bust</th>
+                            <th>Waist</th>
+                            <th>Hips</th>
+                            <th>Inseam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XS</td>
+                            <td>76-81</td>
+                            <td>61-66</td>
+                            <td>86-91</td>
+                            <td>76</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>81-86</td>
+                            <td>66-71</td>
+                            <td>91-96</td>
+                            <td>77</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>86-91</td>
+                            <td>71-76</td>
+                            <td>96-101</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>91-96</td>
+                            <td>76-81</td>
+                            <td>101-106</td>
+                            <td>79</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="size-chart-table" id="accessories" style="display: none;">
+                <h3>Accessories Size Chart</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Size</th>
+                            <th>Dimensions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hats</td>
+                            <td>One Size</td>
+                            <td>Adjustable (54-60 cm)</td>
+                        </tr>
+                        <tr>
+                            <td>Backpacks</td>
+                            <td>Standard</td>
+                            <td>45 x 30 x 15 cm</td>
+                        </tr>
+                        <tr>
+                            <td>Shoes</td>
+                            <td>EU 36-44</td>
+                            <td>Standard EU sizing</td>
+                        </tr>
+                        <tr>
+                            <td>Sunglasses</td>
+                            <td>One Size</td>
+                            <td>Universal fit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
